@@ -1,16 +1,65 @@
-# React + Vite
+# APS Security Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend implementation of a cybersecurity scanning dashboard based on the provided design reference.
 
-Currently, two official plugins are available:
+The goal of this project was to recreate the UI accurately while keeping the code modular and easy to extend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- React Router
+- Tailwind CSS
+- Context API (for theme management)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Login / Sign up page with full gradient background
+- Dashboard with:
+  - Severity stats overview
+  - Searchable scan table
+  - Dynamic progress bars
+  - Status indicators
+- Scan detail page with:
+  - Circular progress indicator
+  - Step tracker (Spidering → Reporting)
+  - Live console simulation
+  - Findings list with severity badges
+- Dark / Light theme toggle
+
+---
+
+## Project Structure
+
+The project is structured by responsibility:
+
+- `layout/` → Sidebar, Header, AppLayout
+- `ui/` → Reusable components (Button, StatusChip, SeverityBadge, ProgressBar)
+- `dashboard/` → StatsBar, ScanTable
+- `scan/` → Step tracker, Console panel, Findings
+- `data/` → Mock data used to simulate scan results
+- `context/` → Theme management
+
+Components were separated to keep pages clean and reusable.
+
+---
+
+## Design Approach
+
+I tried to match the reference design closely, especially:
+
+- Gradient background on auth page
+- Scan progress visualization
+- Severity color coding
+- Step tracking layout
+- Clean spacing and alignment
+
+The UI is fully responsive and works across different screen sizes.
+
+---
+
+Clone the repository:
+https://github.com/Shahid7424/Fenrir-Security-Private-Limited
