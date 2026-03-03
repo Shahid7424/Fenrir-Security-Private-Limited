@@ -62,4 +62,4 @@ The UI is fully responsive and works across different screen sizes.
 ---
 
 Clone the repository:
-https://github.com/Shahid7424/Fenrir-Security-Private-Limited
+https://github.com/Shahid7424/Fenrir-Security-Private-Limited.git
