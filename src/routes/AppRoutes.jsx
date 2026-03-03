@@ -1,0 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
+import ScanDetail from "../pages/ScanDetail";
+import Header from "../components/layout/Header"
+
+function AppRoutes() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/scan/:id" element={<ScanDetail />} />
+        <Route path="/header" element={<Header />} />
+
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default AppRoutes;
